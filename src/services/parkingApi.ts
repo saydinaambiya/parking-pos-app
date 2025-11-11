@@ -14,7 +14,7 @@ export interface ApiResponse<T = any> {
   data?: T
 }
 
-const API_BASE_URL = 'https://parking-pos.onrender.com/v1/parking'
+const API_BASE_URL = 'https://parking-pos.onrender.com/api/v1/parking'
 
 export const parkingApi = {
   async checkIn(vehiclePlateNumber: string, vehicleType: string): Promise<ApiResponse> {
