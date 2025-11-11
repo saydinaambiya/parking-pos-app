@@ -14,7 +14,7 @@ export interface ApiResponse<T = any> {
   data?: T
 }
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL + '/v1/parking'
+const API_BASE_URL = process.env.VITE_API_BASE_URL + '/v1/parking'
 
 export const parkingApi = {
   async checkIn(vehiclePlateNumber: string, vehicleType: string): Promise<ApiResponse> {
